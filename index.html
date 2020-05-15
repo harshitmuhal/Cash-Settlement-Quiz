@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cash settlement quiz</title>
+    <!-- Required meta tags for responsive behaviour-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="heap.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+</head>
+
+<body style="background-color: #c8c8c8;">
+    
+    <nav class="navbar navbar-light" style="font-size: 15px; font-family: sans-serif; background-color: #B0B0B0 ;">
+        <b>Minimize Cash Flow among the given set of friends who have borrowed money from each other.<br>
+        Press 'Get New Problem' to get a new quiz.<br>
+        Press 'solve' to get the Solution.</b>
+    </nav>
+    
+    <div id="container">
+        <div id="mynetwork"></div>
+        <div id="container2">
+            <span id="temptext" style="width: 100%; text-align: center; font-size: x-large">
+                <b>Solution will appear here!!</b>
+            </span>
+            <div id="mynetwork2" style="display: none"></div>
+        </div>
+    </div>
+
+    <div>
+        <br>
+        <button type="button" class="button" id="generate-graph">Get New Problem</button>
+        <br>
+        <button type="button" class="button" id="solve">Solve</button>
+    </div>
+</body>
+
+</html>
